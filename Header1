@@ -1,0 +1,13 @@
+RestUtil.setBaseURI(domain);
+		RestUtil.setContentType(ContentType.JSON);
+		request = RestAssured.given().filter(new RequestLoggingFilter(LogDetail.ALL, true, requestCapture)).log().all();
+		
+		
+		if (!environment.contains("systemapi")) {
+			request.header("Content-Type", "application/json").header("Authorization",
+					"Bearer " + TestData.okta_acess_token);
+		} else {// if its system api don't add any authentication token
+			request.header("Content-Type", "application/json");
+		}
+		parser = new JsonParser();
+	}
