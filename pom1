@@ -470,7 +470,10 @@
 			<version>2.8.0</version>
 		</dependency>
 
-
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "AccessToken" (class Boh.microservices.businessobjects.responseObjects.GetAuthorizationResponse), not marked as ignorable (5 known properties: "expiresIn", "errorDescription", "accessToken", "refreshToken", "isError"])
+ at [Source: {"AccessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImFjYWViMWY3NTZiYTU4MDAwYWE2N2ZkOGNjMzU5ZmE4IiwidHlwIjoiSldUIn0.eyJuYmYiOjE2MTQ3NjUwNTYsImV4cCI6MTYxNDc2ODY1NiwiaXNzIjoiaHR0cDovL2RldjYwM3N2YzAxOjE1MDAiLCJhdWQiOlsiaHR0cDovL2RldjYwM3N2YzAxOjE1MDAvcmVzb3VyY2VzIiwiSW50ZWdyYXRlZFBheW1lbnRzSW50ZXJuYWwiXSwiY2xpZW50X2lkIjoiSW50ZWdyYXRlZFBheW1lbnRzIiwic2NvcGUiOlsiSW50ZWdyYXRlZFBheW1lbnRzSW50ZXJuYWwiXX0.oixPlpv1dUhStffUTO2pZZ9JyFrzCBUhDimCwh5YoTQ_dYUXvWtgxwADqXTv-fk88VZSc9f2WoWC4-dBniwGtIhB74Pc45tAlQdUqas6eOr8dcZhputCljzmVEQL5Bxbs7EzKg5e9B9K4AL4QgikOGL6uMVo_vc03U3qp949fNBgmGfQbwUje978dzzhc8tDy-ixw7U54in-Cq6lDtn835yCC9fk4dska2G2rZgBHwuLQn-nlRHJF91RZE2fdcKZcy-AEBpk3z5MCHLVMNgtVG72A_uLSELLx79ONpZWEfVEFnFOYfhIDKbnwLvFqjmK8MEu0f_hu1mUvv0FwuypPQ","RefreshToken":null,"ExpiresIn":3600,"ErrorDescription":null,"IsError":false}; line: 1, column: 17] (through reference chain: Boh.microservices.businessobjects.responseObjects.GetAuthorizationResponse["AccessToken"])
+	at Boh.microservices.tests.sample.getAuthorizationKey.GetAuthorizationKey(getAuthorizationKey.java:102)
 
 
 
